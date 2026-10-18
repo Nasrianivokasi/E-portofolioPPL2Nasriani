@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Nasriani, S.Pd. | Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="beranda.html#beranda" class="nav-brand">
+            <span class="nav-logo-badge"><i class="fas fa-graduation-cap"></i></span>
+            <span class="nav-brand-text">
+                <span class="nav-platform">PPL / PPG</span>
+                <span class="nav-tagline">Berkarya • Berdampak</span>
+            </span>
+        </a>
+        <ul class="nav-links">
+            <li class="menu-pg1"><a href="beranda.html#beranda"><i class="fas fa-home"></i>Beranda</a></li>
+            <li class="menu-pg1"><a href="profil.html"><i class="fas fa-user"></i>Profil</a></li>
+            <li class="nav-dropdown menu-pg1">
+                <a href="analisis.html" class="dropdown-toggle"><i class="fas fa-list"></i>Analisis<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="analisis.html#analisis-rencana"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Rencana Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-materi"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Materi Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-media"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Media Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-video"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Video Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-non-mengajar"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Kegiatan Non-Mengajar<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#refleksi"><span class="sub-ico"><i class="fas fa-lightbulb"></i></span>Refleksi<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uts.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UTS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uts.html#uts-rpm1"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uts.html#uts-video1"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uas.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UAS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uas.html#uas-rpm"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uas.html#uas-video"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="menu-pg2"><a href="artefak.html"><i class="fas fa-folder-open"></i>Artefak &amp; Galeri</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="nav-pager" id="navPager" onclick="toggleNavPage()"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-profile" title="Profil Pengguna"><i class="fas fa-user-circle"></i></div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-section">
+        <div class="hero-card" data-aos="fade-up">
+            <div class="hero-tape"></div>
+            <div class="hero-decorations">
+                <div class="hero-circle hero-circle-1"></div>
+                <div class="hero-circle hero-circle-2"></div>
+                <div class="hero-dots"></div>
+                <div class="hero-spark hero-spark-1"><i class="fas fa-sparkles"></i></div>
+                <div class="hero-spark hero-spark-2"><i class="fas fa-star"></i></div>
+                <div class="hero-spark hero-spark-3"><i class="fas fa-graduation-cap"></i></div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-text-wrap">
+                    <div class="hero-icon-badge"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="hero-welcome">Selamat Datang di</p>
+                    <h1 class="hero-title-large"><span class="hero-title-top">E-Portofolio</span>PPL Mandiri</h1>
+                    <div class="hero-title-line"></div>
+                    <p class="hero-name">Nasriani, S.Pd.</p>
+                    <p class="hero-nim">2590494950035</p>
+                    <div class="hero-cta">
+                        <a href="profil.html" class="hero-btn primary"><i class="fas fa-user"></i> Jelajahi Profil</a>
+                        <a href="analisis.html" class="hero-btn ghost"><i class="fas fa-book-open"></i> Lihat Analisis</a>
+                    </div>
+                </div>
+                <div class="hero-photo">
+                    <div class="hero-photo-ring"></div>
+                    <img src="IMG_0328.JPG" alt="Nasriani, S.Pd.">
+                    <div class="hero-photo-chip"><i class="fas fa-camera"></i> PPL Mandiri</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-note" data-aos="fade-up" data-aos-delay="100">
+            <span class="intro-note-icon"><i class="fas fa-folder-open"></i></span>
+            <p class="intro-note-text">Di dalam E-portofolio ini terdapat tugas <strong>LK 3</strong>, <strong>UTS</strong> dan <strong>UAS</strong>.</p>
+            <p class="intro-note-greet">Selamat menjelajahi <span class="intro-note-emoji" role="img" aria-label="senyum">😊</span></p>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div id="mitra" class="mitra-section">
+            <div class="mitra-head" data-aos="fade-up">
+                <span class="mitra-eyebrow"><i class="fas fa-handshake"></i> Institusi Penyelenggara</span>
+                <h2 class="section-title">Asal LPTK &amp; Sekolah Mitra PPL</h2>
+                <p class="section-subtitle">Institusi tempat studi dan pelaksanaan Praktik Pengalaman Lapangan (PPL)</p>
+            </div>
+
+            <div class="mitra-row">
+                <article class="mitra-card mitra-card--lptk" data-aos="fade-up" data-aos-delay="150">
+                    <div class="mitra-logo">
+                        <img src="logo_unm.png" alt="Logo Universitas Negeri Makassar" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fas fa-university mitra-logo-fallback'}))">
+                    </div>
+                    <div class="mitra-info">
+                        <span class="mitra-tag"><i class="fas fa-graduation-cap"></i> Asal LPTK</span>
+                        <h3>Universitas Negeri Makassar</h3>
+                        <p class="mitra-address"><span class="mitra-pin"><i class="fas fa-map-marker-alt"></i></span> Jalan A.P. Pettarani, Makassar, Sulawesi Selatan 90222</p>
+                        <div class="mitra-divider"></div>
+                        <p class="mitra-desc">Universitas Negeri Makassar (UNM) merupakan salah satu Lembaga Pendidikan Tenaga Kependidikan (LPTK) di Indonesia yang berperan dalam mencetak calon guru profesional.</p>
+                        <p class="mitra-desc">UNM menjadi tempat saya menempuh <strong>Program Profesi Guru (PPG) Calon Guru Gelombang 1 Tahun 2026</strong>.</p>
+                    </div>
+                </article>
+
+                <article class="mitra-card mitra-card--smk" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mitra-logo">
+                        <img src="logo_smkn6.png" alt="Logo SMK Negeri 6 Makassar" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fas fa-school mitra-logo-fallback'}))">
+                    </div>
+                    <div class="mitra-info">
+                        <span class="mitra-tag"><i class="fas fa-school"></i> Sekolah Mitra PPL</span>
+                        <h3>SMK Negeri 6 Makassar</h3>
+                        <p class="mitra-address"><span class="mitra-pin"><i class="fas fa-map-marker-alt"></i></span> Jalan Andi Djemma No. 132, Makassar, Sulawesi Selatan</p>
+                        <div class="mitra-divider"></div>
+                        <p class="mitra-desc">Sekolah menengah kejuruan yang menyelenggarakan berbagai program keahlian, antara lain:</p>
+                        <ul class="mitra-jurusan">
+                            <li><i class="fas fa-check-circle"></i> Akuntansi dan Keuangan Lembaga</li>
+                            <li><i class="fas fa-check-circle"></i> Perhotelan</li>
+                            <li><i class="fas fa-check-circle"></i> Kuliner</li>
+                            <li><i class="fas fa-check-circle"></i> Tata Busana</li>
+                            <li><i class="fas fa-check-circle"></i> Kecantikan dan Spa</li>
+                            <li><i class="fas fa-check-circle"></i> Desain Komunikasi Visual</li>
+                        </ul>
+                        <p class="mitra-desc">SMK Negeri 6 Makassar ditetapkan sebagai Sekolah Mitra dalam pelaksanaan <strong>PPL Mandiri Program Profesi Guru (PPG) Tahun 2026</strong>, di bawah bimbingan Dosen Pembimbing Lapangan (DPL) dan Guru Pamong untuk mengembangkan kompetensi pedagogik, profesional, sosial, dan kepribadian calon guru.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div class="nav-cards">
+            <a href="beranda.html#beranda" class="nav-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="nav-card-icon"><i class="fas fa-home"></i></div>
+                <h3>Beranda</h3>
+                <p>Halaman utama untuk melihat informasi dan pengantar.</p>
+            </a>
+            <a href="profil.html" class="nav-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="nav-card-icon"><i class="fas fa-user"></i></div>
+                <h3>Profil</h3>
+                <p>Informasi diri, latar belakang, dan tujuan.</p>
+            </a>
+            <a href="analisis.html" class="nav-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="nav-card-icon"><i class="fas fa-list"></i></div>
+                <h3>Analisis</h3>
+                <p>Akses ke seluruh analisis dan dokumen.</p>
+            </a>
+            <a href="uts.html" class="nav-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="nav-card-icon"><i class="fas fa-file-signature"></i></div>
+                <h3>UTS</h3>
+                <p>Karya terbaik dan analisis pada Siklus I.</p>
+            </a>
+            <a href="uas.html" class="nav-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="nav-card-icon"><i class="fas fa-award"></i></div>
+                <h3>UAS</h3>
+                <p>Karya terbaik dan analisis pada Siklus 2-4.</p>
+            </a>
+            <a href="artefak.html" class="nav-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="nav-card-icon"><i class="fas fa-folder-open"></i></div>
+                <h3>Artefak &amp; Galeri</h3>
+                <p>Dokumentasi siklus pembelajaran dan momen selama PPL.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-tagline">"Bersama Pendidikan, Menuju Masa Depan yang Lebih Baik."</p>
+            <p class="footer-meta">E-Portofolio | Nasriani, S.Pd. | PPG Calon Guru Gelombang 1 Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

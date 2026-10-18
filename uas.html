@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Nasriani, S.Pd. | UAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="beranda.html#beranda" class="nav-brand">
+            <span class="nav-logo-badge"><i class="fas fa-graduation-cap"></i></span>
+            <span class="nav-brand-text">
+                <span class="nav-platform">PPL / PPG</span>
+                <span class="nav-tagline">Berkarya • Berdampak</span>
+            </span>
+        </a>
+        <ul class="nav-links">
+            <li class="menu-pg1"><a href="beranda.html#beranda"><i class="fas fa-home"></i>Beranda</a></li>
+            <li class="menu-pg1"><a href="profil.html"><i class="fas fa-user"></i>Profil</a></li>
+            <li class="nav-dropdown menu-pg1">
+                <a href="analisis.html" class="dropdown-toggle"><i class="fas fa-list"></i>Analisis<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="analisis.html#analisis-rencana"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Rencana Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-materi"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Materi Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-media"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Media Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-video"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Video Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-non-mengajar"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Kegiatan Non-Mengajar<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#refleksi"><span class="sub-ico"><i class="fas fa-lightbulb"></i></span>Refleksi<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uts.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UTS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uts.html#uts-rpm1"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uts.html#uts-video1"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uas.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UAS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uas.html#uas-rpm"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uas.html#uas-video"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="menu-pg2"><a href="artefak.html"><i class="fas fa-folder-open"></i>Artefak &amp; Galeri</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="nav-pager" id="navPager" onclick="toggleNavPage()"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-profile" title="Profil Pengguna"><i class="fas fa-user-circle"></i></div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="uas">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-award"></i></div>
+            <h2 class="section-title">UAS</h2>
+            <p class="section-subtitle">Ujian Akhir Semester — Karya terbaik Siklus 2-4</p>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <a class="mini-stat ms-navy" href="#uas-rpm"><span class="ms-num">1</span><span class="ms-label">RPM Terbaik</span></a>
+            <a class="mini-stat ms-blue" href="#uas-video"><span class="ms-num">1</span><span class="ms-label">Video</span></a>
+            <a class="mini-stat ms-green" href="#uas-kelebihan"><span class="ms-num">6</span><span class="ms-label">Kelebihan</span></a>
+            <a class="mini-stat ms-red" href="#uas-kekurangan"><span class="ms-num">6</span><span class="ms-label">Kekurangan</span></a>
+        </div>
+
+        <!-- RPM Terbaik Siklus 2-4 -->
+        <div class="detail-block" id="uas-rpm" data-aos="fade-up" data-aos-delay="150">
+            <h3 class="sub-section-title"><i class="fas fa-file-circle-check"></i> RPM Terbaik Siklus 2-4</h3>
+            <p class="sub-section-subtitle">Modul Ajar Roti Tawar Kreatif — Fase F Konsentrasi Kuliner</p>
+
+            <div class="file-doc">
+                <div class="file-doc-head">
+                    <div class="file-doc-icon"><i class="fas fa-file-circle-check"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — RPM Terbaik Siklus 2-4</h4>
+                        <p>Baca langsung di halaman ini atau unduh filenya dari Google Drive.</p>
+                    </div>
+                    <div class="file-doc-actions">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                </div>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk/preview"
+                            title="Modul Ajar — RPM Terbaik Siklus 2-4"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <h3 class="sub-section-title detail-analysis-title"><i class="fas fa-magnifying-glass-chart"></i> Analisis Modul</h3>
+            <div class="rencana-list">
+                <article class="rencana-item" data-aos="fade-up">
+                    <div class="rencana-head">
+                        <span class="rencana-num"><i class="fas fa-bullseye"></i></span>
+                        <h3>Tujuan</h3>
+                    </div>
+                    <ul class="rencana-points">
+                        <li><span class="pt-dot"></span><div>Modul ini bertujuan agar murid Fase F mampu <strong>menganalisis bahan dan alat, membuat roti tawar</strong> sesuai prosedur dan standar industri, <strong>menganalisis kegagalan produk</strong>, serta <strong>menerapkan K3 dan pengolahan limbah</strong>. Murid mengerjakan proyek kelompok membuat roti tawar kreatif (biasa, belang, cheetah, watermelon, atau pandan) melalui PjBL dalam pendekatan pembelajaran mendalam.</div></li>
+                    </ul>
+                </article>
+
+                <article class="rencana-item" id="uas-kelebihan" data-aos="fade-up" data-aos-delay="100">
+                    <div class="rencana-head">
+                        <span class="rencana-num" style="background: linear-gradient(135deg, #2e7d32, #66bb6a);"><i class="fas fa-thumbs-up"></i></span>
+                        <h3>Kelebihan</h3>
+                        <span class="rencana-rate rate-baik">6 Poin</span>
+                    </div>
+                    <div class="rencana-subgroup sub-good">
+                        <ul class="rencana-sub-simple">
+                            <li>Alokasi waktu konsisten: 45 + 360 + 45 menit = 450 menit, sama dengan 10 × 45 menit.</li>
+                            <li>Tujuan pembelajaran selaras dengan CP, dan K3 serta limbah muncul di setiap tahap (TP, formatif, rubrik, penutup dengan general cleaning dan sisa roti menjadi tepung panir).</li>
+                            <li>Sintaks PjBL lengkap dan jelas (6 tahap), termasuk jadwal produksi yang memperhitungkan proofing. Pendahuluan menarik karena memakai watermelon dan cheetah bread sebagai pemantik.</li>
+                            <li>Diferensiasi kuat: diagnostik dengan tindak lanjut pengelompokan, serta program remedial (tutor sebaya, analisis video kegagalan) dan pengayaan (baker&rsquo;s percentage dan costing, kemasan ramah lingkungan).</li>
+                            <li>Rubrik produk berdeskriptor rinci dengan 4 level, ditambah daftar periksa formatif dan LKPD digital yang melatih analisis (window pane test, evaluasi sensoris).</li>
+                            <li>Bahan bacaan akurat secara teknis (gluten, suhu adonan 24&ndash;26&deg;C, poke test, Maillard) dan merujuk Gisslen serta Suas.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="rencana-item" id="uas-kekurangan" data-aos="fade-up" data-aos-delay="200">
+                    <div class="rencana-head">
+                        <span class="rencana-num" style="background: linear-gradient(135deg, #c62828, #ef5350);"><i class="fas fa-triangle-exclamation"></i></span>
+                        <h3>Kekurangan</h3>
+                        <span class="rencana-rate rate-perbaikan">6 Poin</span>
+                    </div>
+                    <div class="rencana-subgroup sub-warn">
+                        <ul class="rencana-sub-simple">
+                            <li>Inti 360 menit tidak dirinci per sintaks. Oven yang dipakai bergiliran antarkelompok juga tidak dijadwalkan.</li>
+                            <li>TP 1, 3, 5, dan 6 (definisi, bahan dan alat, analisis kegagalan, pengemasan dan penyimpanan) belum didukung materi, langkah, dan asesmen. Bahan bacaan tidak memuat definisi pastry/bakery, fungsi bahan dan alat, tahap proofing akhir, pendinginan, maupun pengemasan.</li>
+                            <li>Murid diminta merancang formula sendiri, tetapi tidak ada resep dasar atau baker&rsquo;s percentage sebagai acuan. Pewarna dan persentase warna juga tidak dijelaskan.</li>
+                            <li>Asesmen belum menyeluruh: sumatif hanya menilai produk kelompok (tanpa tes tertulis, nilai individu, atau kriteria presentasi dan kemasan). Formatif hanya ya/tidak, skor diagnostik tidak berskala jelas, dan istilah KKM seharusnya KKTP. Label Pemula/Cakap/Mahir juga berbeda dengan rubrik (Layak/Baru Berkembang).</li>
+                            <li>Beberapa elemen tidak konsisten dengan isi: Penalaran Kritis tidak dicentang padahal CP dan LKPD menuntut analisis. Canva dan AI disebut sebagai media tetapi tidak muncul di langkah, dan instrumen refleksi murid maupun guru tidak dilampirkan.</li>
+                            <li>Administrasi: tahun pelajaran 2026/2027 semester genap tetapi ditandatangani Agustus 2026, penulisan &ldquo;X1&rdquo; semestinya &ldquo;XI&rdquo;, dan karakteristik murid ada tanda kurung yang belum ditutup. Daftar alat dan bahan serta jumlah kelompok juga tidak ada.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Video Pembelajaran Terbaik Siklus 2-4 -->
+        <div class="detail-block" id="uas-video" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="sub-section-title"><i class="fas fa-video"></i> Video Praktik Mengajar</h3>
+            <p class="sub-section-subtitle">Video pembelajaran terbaik pada Siklus 2-4</p>
+
+            <div class="video-frame" data-aos="fade-up">
+                <iframe src="https://drive.google.com/file/d/1s0AeiTUqSRAmcKSlG16rgSJ0vMfinwsc/preview"
+                        title="Video Praktik Mengajar — Siklus 2-4"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+            </div>
+
+            <div class="video-actions" data-aos="fade-up">
+                <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1s0AeiTUqSRAmcKSlG16rgSJ0vMfinwsc" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+            </div>
+            <p class="video-caption" data-aos="fade-up">Klik tombol putar pada video untuk memutar rekaman, atau unduh untuk menyimpan.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-tagline">"Bersama Pendidikan, Menuju Masa Depan yang Lebih Baik."</p>
+            <p class="footer-meta">E-Portofolio | Nasriani, S.Pd. | PPG Calon Guru Gelombang 1 Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

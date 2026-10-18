@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Nasriani, S.Pd. | Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="beranda.html#beranda" class="nav-brand">
+            <span class="nav-logo-badge"><i class="fas fa-graduation-cap"></i></span>
+            <span class="nav-brand-text">
+                <span class="nav-platform">PPL / PPG</span>
+                <span class="nav-tagline">Berkarya • Berdampak</span>
+            </span>
+        </a>
+        <ul class="nav-links">
+            <li class="menu-pg1"><a href="beranda.html#beranda"><i class="fas fa-home"></i>Beranda</a></li>
+            <li class="menu-pg1"><a href="profil.html"><i class="fas fa-user"></i>Profil</a></li>
+            <li class="nav-dropdown menu-pg1">
+                <a href="analisis.html" class="dropdown-toggle"><i class="fas fa-list"></i>Analisis<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="analisis.html#analisis-rencana"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Rencana Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-materi"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Materi Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-media"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Media Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-video"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Video Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-non-mengajar"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Kegiatan Non-Mengajar<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#refleksi"><span class="sub-ico"><i class="fas fa-lightbulb"></i></span>Refleksi<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uts.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UTS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uts.html#uts-rpm1"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uts.html#uts-video1"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uas.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UAS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uas.html#uas-rpm"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uas.html#uas-video"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="menu-pg2"><a href="artefak.html"><i class="fas fa-folder-open"></i>Artefak &amp; Galeri</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="nav-pager" id="navPager" onclick="toggleNavPage()"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-profile" title="Profil Pengguna"><i class="fas fa-user-circle"></i></div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="profil">
+        <div class="profil-hero" data-aos="fade-up">
+            <div class="profil-hero-decor">
+                <div class="pdot pdot-1"></div>
+                <div class="pdot pdot-2"></div>
+                <div class="pdot pdot-3"></div>
+            </div>
+            <div class="profil-hero-text">
+                <span class="profil-hero-label"><i class="fas fa-user-graduate"></i> Profil Saya</span>
+                <h2 class="profil-hero-name">Nasriani, S.Pd.</h2>
+                <p class="profil-hero-status">Mahasiswa PPG Calon Guru Gelombang 1 Tahun 2026</p>
+                <div class="profil-hero-chips">
+                    <span class="profil-chip"><i class="fas fa-utensils"></i> Bidang: Kuliner</span>
+                    <span class="profil-chip"><i class="fas fa-university"></i> UNM Makassar</span>
+                    <span class="profil-chip"><i class="fas fa-location-dot"></i> Makassar, Sulawesi Selatan</span>
+                </div>
+                <div class="profil-hero-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Pendidikan bukan hanya tentang mentransfer ilmu, tetapi juga tentang menumbuhkan harapan."</p>
+                </div>
+            </div>
+            <div class="profil-hero-photo">
+                <div class="profil-photo-badge"><i class="fas fa-graduation-cap"></i></div>
+                <img src="profil.JPG" alt="Nasriani, S.Pd.">
+            </div>
+        </div>
+
+        <div class="biodata-row">
+            <div class="biodata-col">
+                <div class="biodata-card" data-aos="fade-up">
+                    <h3><i class="fas fa-id-card"></i> Biodata</h3>
+                    <ul class="biodata-list">
+                        <li><span class="bio-ico"><i class="fas fa-user"></i></span><span class="label">Nama</span><span class="value">Nasriani, S.Pd.</span></li>
+                        <li><span class="bio-ico"><i class="fas fa-hashtag"></i></span><span class="label">NIM</span><span class="value">2590494950035</span></li>
+                        <li><span class="bio-ico"><i class="fas fa-utensils"></i></span><span class="label">Bidang Studi</span><span class="value">Kuliner</span></li>
+                        <li><span class="bio-ico"><i class="fas fa-university"></i></span><span class="label">Universitas</span><span class="value">Universitas Negeri Makassar</span></li>
+                        <li><span class="bio-ico"><i class="fas fa-user-tie"></i></span><span class="label">Dosen Pembimbing</span><span class="value">Dr. Slamet Widodo, S.Pd., M.Kes.</span></li>
+                        <li><span class="bio-ico"><i class="fas fa-chalkboard-user"></i></span><span class="label">Guru Pamong</span><span class="value">Mardiana Mandeha, S.Pd.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tujuan-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="tujuan-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Tujuan Pribadi</h3>
+                <p class="tujuan-quote">"Menjadi guru yang profesional, berintegritas, serta mampu memberikan dampak positif bagi peserta didik dan lingkungan pendidikan."</p>
+            </div>
+        </div>
+
+        <div class="kontak-alamat-row">
+            <div class="kontak-card" data-aos="fade-up">
+                <div class="kontak-head">
+                    <h3><i class="fas fa-phone"></i> Kontak Saya</h3>
+                </div>
+                <div class="kontak-row">
+                    <div class="kontak-item">
+                        <span class="kontak-ico"><i class="fab fa-whatsapp"></i></span>
+                        <div>
+                            <span class="kontak-label">WhatsApp</span>
+                            <a href="https://wa.me/6282358888074" target="_blank" rel="noopener">0823 5888 8074</a>
+                        </div>
+                        <a class="kontak-btn" href="https://wa.me/6282358888074" target="_blank" rel="noopener"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-ico"><i class="fab fa-instagram"></i></span>
+                        <div>
+                            <span class="kontak-label">Instagram</span>
+                            <a href="https://instagram.com/nasrianiarifinnn" target="_blank" rel="noopener">@nasrianiarifinnn</a>
+                        </div>
+                        <a class="kontak-btn" href="https://instagram.com/nasrianiarifinnn" target="_blank" rel="noopener"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                    <div class="kontak-item">
+                        <span class="kontak-ico"><i class="fas fa-envelope"></i></span>
+                        <div>
+                            <span class="kontak-label">Email</span>
+                            <a href="mailto:nasriani.arifin2452@gmail.com">nasriani.arifin2452@gmail.com</a>
+                        </div>
+                        <a class="kontak-btn" href="mailto:nasriani.arifin2452@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="alamat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="alamat-head">
+                    <i class="fas fa-house"></i>
+                    <h4>Alamat Rumah</h4>
+                </div>
+                <p class="alamat-text">Perumahan Bumi Palanga Mas Blok E No. 65</p>
+                <div class="alamat-map-wrap">
+                    <iframe src="https://maps.google.com/maps?q=-5.1380224,119.4590208&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Alamat Rumah"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="riwayat-row">
+            <div class="riwayat-panel" data-aos="fade-up">
+                <div class="riwayat-head">
+                    <h3><i class="fas fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                    <button type="button" class="lihat-semua" onclick="toggleTimeline('timeline-pendidikan', this)">Lihat Semua <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="timeline collapsed" id="timeline-pendidikan">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015–2019</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-university"></i></div>
+                            <div>
+                                <h4>Universitas Negeri Makassar — S1</h4>
+                                <p>Pendidikan Kesejahteraan Keluarga</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2012–2015</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-school"></i></div>
+                            <div>
+                                <h4>SMA Wahyu Makassar</h4>
+                                <p>Ilmu Pengetahuan Alam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2009–2013</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-school"></i></div>
+                            <div>
+                                <h4>SMP Wahyu Makassar</h4>
+                                <p>Pendidikan Menengah Pertama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2003–2009</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-school"></i></div>
+                            <div>
+                                <h4>SD Inpres Tommo II</h4>
+                                <p>Pendidikan Dasar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="riwayat-panel" data-aos="fade-up" data-aos-delay="150">
+                <div class="riwayat-head">
+                    <h3><i class="fas fa-people-group"></i> Riwayat Organisasi</h3>
+                    <button type="button" class="lihat-semua" onclick="toggleTimeline('timeline-organisasi', this)">Lihat Semua <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="timeline collapsed" id="timeline-organisasi">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2013–sekarang</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-flag"></i></div>
+                            <div>
+                                <h4>Wanapala Weis Makassar</h4>
+                                <p>Bendahara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016–2017</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4>Himpunan Mahasiswa PKK UNM</h4>
+                                <p>Anggota</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016–2017</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-trophy"></i></div>
+                            <div>
+                                <h4>UKM Pramuka UNM</h4>
+                                <p>Bendahara Ambalan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017–2018</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-bullhorn"></i></div>
+                            <div>
+                                <h4>UKM Pramuka UNM</h4>
+                                <p>Humas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018–2019</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-star"></i></div>
+                            <div>
+                                <h4>UKM Pramuka UNM</h4>
+                                <p>Ketua Dewan Racana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019–2022</div>
+                        <div class="timeline-card">
+                            <div class="timeline-ico"><i class="fas fa-pen-nib"></i></div>
+                            <div>
+                                <h4>KBM — Forum Menulis Makassar</h4>
+                                <p>Sekretaris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inspirasi-section" data-aos="fade-up">
+            <div class="inspirasi-decor">
+                <i class="fas fa-book inspirasi-ico ico-1"></i>
+                <i class="fas fa-pencil inspirasi-ico ico-2"></i>
+                <i class="fas fa-seedling inspirasi-ico ico-3"></i>
+            </div>
+            <div class="inspirasi-content">
+                <h3>Inspirasi Menjadi Guru</h3>
+                <p>Inspirasi menjadi guru bagi saya muncul karena saya sangat suka mengajar dan berbagi kepada sesama. Berlatar belakang berbagai organisasi telah membentuk saya menjadi pribadi yang aktif di masyarakat dan senang berbagi, terutama dalam hal pengetahuan.</p>
+                <p>Bagi saya, menjadi guru bukan sekadar profesi, melainkan jembatan untuk mengabdikan pengalaman organisasi saya ke dalam ruang kelas demi mencetak generasi yang tidak hanya cerdas secara akademis, tetapi juga peka secara sosial. Selalu ada harapan bagi mereka yang ingin berusaha, selalu ada peluang bagi mereka yang berusaha. Dan selalu ada jalan bagi mereka yang tak lelah berusaha.</p>
+            </div>
+            <div class="inspirasi-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"Guru yang baik bukan hanya mengajar, tetapi juga menghidupkan semangat belajar dalam diri setiap anak."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-tagline">"Bersama Pendidikan, Menuju Masa Depan yang Lebih Baik."</p>
+            <p class="footer-meta">E-Portofolio | Nasriani, S.Pd. | PPG Calon Guru Gelombang 1 Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Nasriani, S.Pd. | Analisis</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="beranda.html#beranda" class="nav-brand">
+            <span class="nav-logo-badge"><i class="fas fa-graduation-cap"></i></span>
+            <span class="nav-brand-text">
+                <span class="nav-platform">PPL / PPG</span>
+                <span class="nav-tagline">Berkarya • Berdampak</span>
+            </span>
+        </a>
+        <ul class="nav-links">
+            <li class="menu-pg1"><a href="beranda.html#beranda"><i class="fas fa-home"></i>Beranda</a></li>
+            <li class="menu-pg1"><a href="profil.html"><i class="fas fa-user"></i>Profil</a></li>
+            <li class="nav-dropdown menu-pg1">
+                <a href="analisis.html" class="dropdown-toggle"><i class="fas fa-list"></i>Analisis<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="analisis.html#analisis-rencana"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Rencana Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-materi"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Materi Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-media"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Media Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-video"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Video Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-non-mengajar"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Kegiatan Non-Mengajar<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#refleksi"><span class="sub-ico"><i class="fas fa-lightbulb"></i></span>Refleksi<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uts.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UTS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uts.html#uts-rpm1"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uts.html#uts-video1"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uas.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UAS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uas.html#uas-rpm"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uas.html#uas-video"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="menu-pg2"><a href="artefak.html"><i class="fas fa-folder-open"></i>Artefak &amp; Galeri</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="nav-pager" id="navPager" onclick="toggleNavPage()"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-profile" title="Profil Pengguna"><i class="fas fa-user-circle"></i></div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="daftar-isi">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-list-check"></i></div>
+            <h2 class="section-title">Analisis</h2>
+            <p class="section-subtitle">Akses ke seluruh analisis dan dokumen pembelajaran</p>
+        </div>
+        <div class="toc-list" data-aos="fade-up" data-aos-delay="200">
+            <a href="#analisis-rencana" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-clipboard-check"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Analisis Rencana Pembelajaran</span>
+                    <span class="toc-desc">Analisis perencanaan pembelajaran yang disusun selama PPL Mandiri</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="#analisis-materi" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-book-open"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Analisis Materi Pembelajaran</span>
+                    <span class="toc-desc">Analisis materi ajar mata pelajaran Pengolahan Makanan dan Minuman</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="#analisis-media" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-desktop"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Analisis Media Pembelajaran</span>
+                    <span class="toc-desc">Analisis media dan sumber belajar yang digunakan dalam pembelajaran</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="#analisis-video" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-video"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Video Pembelajaran</span>
+                    <span class="toc-desc">Rekaman video pembelajaran yang dapat diputar langsung</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="#analisis-non-mengajar" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-people-group"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Analisis Kegiatan Non-Mengajar</span>
+                    <span class="toc-desc">Analisis kegiatan non-mengajar seperti upacara dan ekstrakurikuler</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+            <a href="#refleksi" class="toc-item">
+                <span class="toc-icon"><i class="fas fa-lightbulb"></i></span>
+                <span class="toc-body">
+                    <span class="toc-title">Refleksi</span>
+                    <span class="toc-desc">Evaluasi, pembelajaran dan tindak lanjut selama PPL</span>
+                </span>
+                <span class="toc-arrow"><i class="fas fa-chevron-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <section id="analisis-rencana">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h2 class="section-title">A. Analisis Rencana Pembelajaran</h2>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-navy"><span class="ms-num">4</span><span class="ms-label">Aspek Ditelaah</span></div>
+            <div class="mini-stat ms-amber"><span class="ms-num">3</span><span class="ms-label">Cukup</span></div>
+            <div class="mini-stat ms-red"><span class="ms-num">1</span><span class="ms-label">Perlu Perbaikan</span></div>
+        </div>
+
+        <div class="rencana-list">
+            <article class="rencana-item" data-aos="fade-up">
+                <div class="rencana-head">
+                    <span class="rencana-num">1</span>
+                    <h3>Kesesuaian Tujuan Pembelajaran dengan Kebutuhan Murid</h3>
+                    <span class="rencana-rate rate-cukup">Cukup</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Sudah sesuai:</strong> Murid digambarkan punya pengetahuan awal yang beragam. Mereka kenal bumbu dapur tetapi belum paham jenis, fungsi, dan turunannya. Lima TP bergerak dari menjelaskan, mengidentifikasi, sampai membuat, sehingga runtut dan selaras dengan CP Fase E.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>TP belum terukur penuh:</strong> Rumusannya tidak memuat kondisi dan tingkat ketercapaian (misalnya "dengan bantuan LKPD, minimal 3 dari 5 jenis"). TP 1–3 juga tumpang tindih: "menjelaskan jenis", "mengidentifikasi", dan "menjelaskan fungsi" mengukur hal yang hampir sama.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>TP 5 tidak tercapai oleh kegiatannya:</strong> TP 5 berbunyi "membuat bumbu dasar dan turunannya", tetapi murid hanya membuat satu bumbu dasar. Turunan hanya diidentifikasi di LKPD. Bagian CP "menerapkan dalam pengolahan makanan sederhana" ditunda ke pertemuan berikutnya.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Keberagaman murid belum dijawab:</strong> Asesmen diagnostik sudah disusun dengan baik, tetapi hasilnya tidak dipakai dalam langkah pembelajaran. Semua murid mendapat LKPD dan perlakuan yang sama, tanpa diferensiasi untuk kategori paham, cukup paham, dan belum paham.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Tidak ada TP tentang sanitasi dan K3:</strong> Padahal praktik dapur akan berlangsung.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>DPL terlalu banyak:</strong> Kedelapan dimensi dicantumkan, tetapi langkah dan asesmen tidak menunjukkan bagaimana tiap dimensi dikembangkan. Sebaiknya pilih 3–4 dimensi yang benar-benar muncul (kolaborasi, komunikasi, penalaran kritis, kemandirian).</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="rencana-head">
+                    <span class="rencana-num">2</span>
+                    <h3>Kesesuaian Model Pembelajaran</h3>
+                    <span class="rencana-rate rate-cukup">Cukup</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Metode cocok untuk SMK kuliner:</strong> Diskusi kelompok, learning by doing, dan tanya jawab sesuai dengan sifat materi. Tahapan Memahami, Mengaplikasikan, dan Merefleksi, serta prinsip berkesadaran, bermakna, dan menggembirakan, konsisten dengan pembelajaran mendalam.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Belum ada model bernama:</strong> Yang tertulis hanya metode, tanpa sintaks model seperti PjBL, PBL, atau Discovery Learning. Akibatnya alur dari masalah ke produk tidak jelas. Praktik berjalan "sesuai petunjuk guru", jadi lebih mirip demonstrasi daripada eksplorasi.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Rencana lebih luas daripada pelaksanaan:</strong> Lintas disiplin ilmu menyebut reaksi Maillard, jalur rempah, food costing, plating, dan pewarna alami. Tidak satu pun muncul di langkah atau asesmen. Hal yang sama berlaku untuk video pembelajaran dan kuis interaktif (hanya slide dan gambar yang dipakai) serta praktisi kuliner (tidak ada perannya di langkah).</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="rencana-head">
+                    <span class="rencana-num">3</span>
+                    <h3>Kesesuaian Langkah Pembelajaran</h3>
+                    <span class="rencana-rate rate-cukup">Cukup</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Kegiatan awal baik:</strong> Apersepsi dari pengalaman memasak di rumah dan penyampaian tujuan sudah kontekstual.</div></li>
+                    <li><span class="pt-dot"></span>
+                        <div>
+                            <strong>Urutan inti perlu diperbaiki:</strong>
+                            <ul class="rencana-sublist">
+                                <li>Penyimpanan bumbu dijelaskan sebelum praktik. Lebih logis setelah murid punya produknya.</li>
+                                <li>Diskusi komposisi dan fungsi bahan ditaruh sesudah praktik, padahal sebaiknya sebelum.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><span class="pt-dot"></span><div><strong>Praktik dapur belum lengkap:</strong> Tidak ada briefing K3, personal hygiene, persiapan bahan dan alat (mise en place), pembagian peran, dan kegiatan bersih-bersih.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Asesmen tidak terhubung:</strong> Diagnostik, LKPD, tes tertulis, dan refleksi tertulis murid tidak disebut di langkah. Penutup hanya berisi simpulan lisan.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Sebagian label prinsip dipaksakan:</strong> Misalnya "memberi penguatan" diberi label menggembirakan.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="rencana-head">
+                    <span class="rencana-num">4</span>
+                    <h3>Kesesuaian Alokasi Waktu</h3>
+                    <span class="rencana-rate rate-perbaikan">Perlu Perbaikan</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Angka tidak konsisten:</strong> Informasi umum menyebut "1 pertemuan / 10 × 45 menit" = 450 menit. Langkah hanya berisi 15 menit (awal) + 60 menit (inti: 20 + 30 + 10), sedangkan waktu penutup tidak ditulis. Totalnya sekitar 90 menit (2 JP), jadi sekitar 360 menit tidak terjadwal.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Inti terlalu padat:</strong> 30 menit untuk Mengaplikasikan memuat penjelasan penyimpanan, praktik membuat bumbu, diskusi, dan presentasi semua kelompok. Praktik menghaluskan dan menumis saja bisa memakan 30–45 menit. Bagian Memahami (20 menit) berisi empat kegiatan dengan sekitar 5 menit per kegiatan.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Sumatif belum dijadwalkan:</strong> Tes tertulis 45 menit tidak masuk alokasi.</div></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="file-doc" data-aos="fade-up">
+            <div class="file-doc-head">
+                <div class="file-doc-icon"><i class="fas fa-folder-open"></i></div>
+                <div class="file-doc-info">
+                    <h4>Dokumen Rencana Pembelajaran</h4>
+                    <p>Buka filenya di Google Drive atau unduh untuk disimpan.</p>
+                </div>
+                <div class="file-doc-actions">
+                    <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1exhF9LuqPEn0U5a0s-nKIwCyMImm0xUz/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                    <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&id=1exhF9LuqPEn0U5a0s-nKIwCyMImm0xUz" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="file-doc" data-aos="fade-up" data-aos-delay="100">
+            <div class="file-doc-head">
+                <div class="file-doc-icon"><i class="fas fa-file-word"></i></div>
+                <div class="file-doc-info">
+                    <h4>Dokumen Rencana Pembelajaran (Google Docs)</h4>
+                    <p>Buka dokumen rencana pembelajaran langsung di Google Docs.</p>
+                </div>
+                <div class="file-doc-actions">
+                    <a class="file-btn file-btn--open" href="https://docs.google.com/document/d/1gBKm33bU6muuSWbOAzEpnhdBHOGsV6VS/edit?usp=drivesdk&amp;ouid=100531298801256093968&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analisis-materi">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-book-open"></i></div>
+            <h2 class="section-title">B. Analisis Materi Ajar</h2>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-navy"><span class="ms-num">4</span><span class="ms-label">Aspek Ditelaah</span></div>
+            <div class="mini-stat ms-green"><span class="ms-num">2</span><span class="ms-label">Baik</span></div>
+            <div class="mini-stat ms-amber"><span class="ms-num">2</span><span class="ms-label">Cukup</span></div>
+        </div>
+
+        <div class="rencana-list">
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="rencana-head">
+                    <span class="rencana-num">1</span>
+                    <h3>Kesesuaian Isi dengan Pembelajaran</h3>
+                    <span class="rencana-rate rate-baik">Baik</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Selaras dengan TP:</strong> Lima materi (pengertian, fungsi, jenis, turunan, penyimpanan) cocok dengan TP 1–4. LKPD Kegiatan 1–3 menopang TP 2, 3, dan 5. Klasifikasi bumbu dasar di LKPD (merah, putih, kuning, oranye, hitam) lebih lengkap daripada daftar di modul ("merah, putih, kuning, dan lainnya"). Sebaiknya satu rujukan klasifikasi ditetapkan agar konsisten.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="rencana-head">
+                    <span class="rencana-num">2</span>
+                    <h3>Kedalaman dan Kesesuaian Materi</h3>
+                    <span class="rencana-rate rate-cukup">Cukup</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Pas untuk awal Fase E:</strong> Level kognitifnya C1–C3.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Terlalu dangkal:</strong> Cara penyimpanan hanya satu langkah penjelasan guru, tanpa suhu, wadah, masa simpan, atau sistem FIFO. Takaran dan komposisi per bumbu serta teknik pengolahan (menghaluskan, menumis, memasak bumbu) tidak dibahas.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Belum ada soal bernalar:</strong> Tidak ada tugas HOTS meski DPL menargetkan penalaran kritis, misalnya "mengapa bumbu kuning perlu ditumis dulu?" atau "apa akibatnya bila disimpan tanpa wadah tertutup?"</div></li>
+                    <li><span class="pt-dot"></span><div><strong>LKPD tidak memuat resep:</strong> Murid bergantung pada petunjuk lisan guru.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="rencana-head">
+                    <span class="rencana-num">3</span>
+                    <h3>Sistematika Penilaian</h3>
+                    <span class="rencana-rate rate-cukup">Cukup</span>
+                </div>
+                <div class="rencana-subgroups">
+                    <div class="rencana-subgroup sub-good">
+                        <div class="subgroup-label"><i class="fas fa-thumbs-up"></i> Kekuatan</div>
+                        <ul class="rencana-sub-simple">
+                            <li>Asesmen lengkap dari awal, proses, sampai akhir.</li>
+                            <li>Diagnostik mencakup aspek non-kognitif (perasaan, sarapan, gaya belajar) dan kognitif.</li>
+                            <li>Rubrik LKPD berbobot 100 poin dengan aspek jelas.</li>
+                        </ul>
+                    </div>
+                    <div class="rencana-subgroup sub-warn">
+                        <div class="subgroup-label"><i class="fas fa-thumbs-down"></i> Kelemahan</div>
+                        <ul class="rencana-sub-simple">
+                            <li>Rubrik hanya punya satu deskriptor per aspek, tanpa level kinerja (misalnya 1–4).</li>
+                            <li>Instrumen observasi diskusi, partisipasi, dan praktik terpisah tidak ada.</li>
+                            <li>Penilaian bersifat kelompok, tanpa penilaian individual.</li>
+                            <li>Tidak ada kisi-kisi yang memetakan TP, indikator, soal, dan bobot.</li>
+                            <li>Tes tertulis hanya mencakup pengertian, fungsi, dan jenis, sehingga turunan dan penyimpanan tidak terukur.</li>
+                            <li>Tidak ada KKTP, pembobotan nilai akhir, atau tindak lanjut remedial dan pengayaan.</li>
+                            <li>Tidak ada aspek sikap dan K3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="rencana-head">
+                    <span class="rencana-num">4</span>
+                    <h3>Keterkaitan dengan Kehidupan Murid</h3>
+                    <span class="rencana-rate rate-baik">Baik</span>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Konteks nyata dan prospek karier:</strong> Apersepsi (bumbu di rumah), pertanyaan "membantu memasak di rumah", dan refleksi tentang dunia kerja kuliner sudah menghubungkan materi dengan keseharian dan prospek karier. Peluang yang belum dimanfaatkan: bumbu khas Sulawesi Selatan (misalnya untuk coto dan konro) sebagai konteks lokal, serta kaitan dengan usaha kuliner, halal, dan kesehatan.</div></li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="analisis-media">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-chalkboard"></i></div>
+            <h2 class="section-title">C. Analisis Media Pembelajaran</h2>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-blue"><span class="ms-num">1</span><span class="ms-label">Media Ditelaah</span></div>
+            <div class="mini-stat ms-green"><span class="ms-num">3</span><span class="ms-label">Kelebihan</span></div>
+            <div class="mini-stat ms-red"><span class="ms-num">5</span><span class="ms-label">Kelemahan</span></div>
+        </div>
+
+        <div class="rencana-list">
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="rencana-head">
+                    <span class="rencana-num">1</span>
+                    <h3>Media PPT (Slide dan Gambar)</h3>
+                </div>
+                <div class="rencana-subgroups">
+                    <div class="rencana-subgroup sub-good">
+                        <div class="subgroup-label"><i class="fas fa-thumbs-up"></i> Kelebihan</div>
+                        <ul class="rencana-sub-simple">
+                            <li><strong>Cocok untuk konsep yang tidak bisa dihadirkan langsung:</strong> pengertian dan fungsi bumbu, pengelompokan bumbu dasar (merah, putih, kuning, oranye, hitam), dan peta turunan masakan dari tiap bumbu dasar.</li>
+                            <li><strong>Efisien untuk kelas besar dan mendukung apersepsi:</strong> gambar bumbu bisa menjadi pemantik, sesuai langkah "guru menampilkan gambar bumbu dan murid menyebutkan nama dan fungsinya".</li>
+                            <li><strong>Menghubungkan bumbu dasar dengan turunannya:</strong> gambar masakan jadi yang disertai bumbu dasarnya membantu murid memahami alur bumbu → turunan (LKPD Kegiatan 2).</li>
+                        </ul>
+                    </div>
+                    <div class="rencana-subgroup sub-warn">
+                        <div class="subgroup-label"><i class="fas fa-triangle-exclamation"></i> Kelemahan dan Risiko</div>
+                        <ul class="rencana-sub-simple">
+                            <li><strong>Murid hanya melihat, belum merasakan:</strong> bumbu adalah materi yang sangat sensorik — aroma, tekstur, warna, rasa, dan kesegaran. Gambar tidak bisa menggantikannya.</li>
+                            <li><strong>Slide cenderung membuat guru yang aktif:</strong> di modul, bagian Memahami dibuka dengan "guru menjelaskan melalui slide", sehingga murid pasif sebelum diskusi.</li>
+                            <li><strong>Gambar bisa menyesatkan untuk bumbu yang mirip:</strong> misalnya kunyit dan temulawak, jahe dan lengkuas, atau kencur dan jahe. Foto sering tidak menunjukkan ukuran dan ciri khas yang membedakannya.</li>
+                            <li><strong>Tidak mencakup kebutuhan saat praktik:</strong> urutan kerja, takaran, dan K3. Padahal LKPD tidak memuat resep, sehingga murid hanya bergantung pada petunjuk lisan guru.</li>
+                            <li><strong>Media digital yang direncanakan belum terpakai:</strong> modul menyebut video dan kuis interaktif, tetapi langkah pembelajaran hanya memakai slide dan gambar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="rencana-note rencana-note--tip" data-aos="fade-up" data-aos-delay="150">
+            <i class="fas fa-lightbulb"></i>
+            <p><strong>Saran:</strong> Batasi 8–10 slide dan satu gagasan per slide.</p>
+        </div>
+    </section>
+
+    <section id="analisis-video">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-video"></i></div>
+            <h2 class="section-title">Video Pembelajaran</h2>
+            <p class="section-subtitle">Rekaman praktik mengajar bumbu dasar selama PPL Mandiri.</p>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-blue"><span class="ms-num">1</span><span class="ms-label">Video Pembelajaran</span></div>
+            <div class="mini-stat ms-green"><span class="ms-num">&#9654;</span><span class="ms-label">Klik untuk Memutar</span></div>
+        </div>
+
+        <div class="video-frame" data-aos="fade-up" data-aos-delay="100">
+            <iframe src="https://drive.google.com/file/d/1exhF9LuqPEn0U5a0s-nKIwCyMImm0xUz/preview"
+                    title="Video Pembelajaran Bumbu Dasar"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy"></iframe>
+        </div>
+        <p class="video-caption" data-aos="fade-up" data-aos-delay="150">Klik tombol putar pada video untuk memutar rekaman pembelajaran.</p>
+    </section>
+
+    <section id="analisis-non-mengajar">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-people-group"></i></div>
+            <h2 class="section-title">Analisis Kegiatan Non-Mengajar</h2>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-navy"><span class="ms-num">4</span><span class="ms-label">Kegiatan Ditelaah</span></div>
+            <div class="mini-stat ms-red"><span class="ms-num">3</span><span class="ms-label">Kelemahan Utama</span></div>
+            <div class="mini-stat ms-purple"><span class="ms-num">4</span><span class="ms-label">Saran Integrasi</span></div>
+        </div>
+
+        <div class="rencana-list">
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="rencana-head">
+                    <span class="rencana-num">1</span>
+                    <h3>3S (Senyum, Sapa, Salam)</h3>
+                    <span class="rencana-tag">Setiap hari</span>
+                </div>
+                <div class="kg-rows">
+                    <div class="kg-row">
+                        <span class="kg-chip chip-kontribusi"><i class="fas fa-hand-holding-heart"></i> Kontribusi</span>
+                        <p>Membangun iklim sekolah yang ramah dan aman serta membiasakan sopan santun. Menjadi titik kontak pertama guru–murid setiap hari, sehingga guru bisa mengenali kondisi murid (murung, tidak bersemangat, terlambat) sebelum pelajaran — selaras dengan pertanyaan non-kognitif pada asesmen diagnostik modul Anda.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-dimensi"><i class="fas fa-award"></i> Dimensi</span>
+                        <p>Kewargaan, komunikasi, serta keimanan dan ketakwaan (adab).</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-risiko"><i class="fas fa-triangle-exclamation"></i> Risiko</span>
+                        <p>Mudah menjadi rutinitas formal tanpa makna bila salam hanya diucapkan sambil lalu.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-saran"><i class="fas fa-lightbulb"></i> Saran</span>
+                        <p>Tambahkan sapaan personal (nama + satu pertanyaan singkat) dan catat murid yang perlu perhatian lanjutan.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="rencana-head">
+                    <span class="rencana-num">2</span>
+                    <h3>Upacara Bendera</h3>
+                    <span class="rencana-tag">Senin</span>
+                </div>
+                <div class="kg-rows">
+                    <div class="kg-row">
+                        <span class="kg-chip chip-kontribusi"><i class="fas fa-hand-holding-heart"></i> Kontribusi</span>
+                        <p>Menumbuhkan disiplin, kekompakan, dan cinta tanah air; melatih ketepatan waktu dan kerapian seragam — relevan dengan kultur kerja SMK dan standar penampilan di dunia kuliner.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-dimensi"><i class="fas fa-award"></i> Dimensi</span>
+                        <p>Kewargaan dan kemandirian.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-risiko"><i class="fas fa-triangle-exclamation"></i> Risiko</span>
+                        <p>Murid bisa pasif; upacara yang monoton sering dianggap sekadar kewajiban dan Senin pagi menyita jam pelajaran pertama.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-saran"><i class="fas fa-lightbulb"></i> Saran</span>
+                        <p>Libatkan murid sebagai petugas bergilir, pakai amanat pembina untuk pesan karakter yang kontekstual, dan koordinasikan jadwal agar jam pertama tidak terlalu terpotong.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="rencana-head">
+                    <span class="rencana-num">3</span>
+                    <h3>Salat Duha Berjamaah &amp; Literasi Al-Qur'an</h3>
+                    <span class="rencana-tag">Jumat blok A</span>
+                </div>
+                <div class="kg-rows">
+                    <div class="kg-row">
+                        <span class="kg-chip chip-kontribusi"><i class="fas fa-hand-holding-heart"></i> Kontribusi</span>
+                        <p>Menguatkan karakter religius, kebiasaan ibadah, dan literasi keagamaan; melatih ketenangan dan fokus sebelum belajar. Nilai jujur, bersih, dan tanggung jawab sejalan dengan etika kerja kuliner, termasuk kesadaran akan makanan halal dan thayyib.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-dimensi"><i class="fas fa-award"></i> Dimensi</span>
+                        <p>Keimanan dan ketakwaan, serta kemandirian.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-risiko"><i class="fas fa-triangle-exclamation"></i> Risiko</span>
+                        <p>Kemampuan membaca murid berbeda-beda; tanpa pengelompokan, yang belum lancar bisa merasa tertinggal. Murid non-muslim (bila ada) perlu kegiatan paralel yang setara.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-saran"><i class="fas fa-lightbulb"></i> Saran</span>
+                        <p>Kelompokkan murid sesuai kemampuan membaca dengan pendamping sebaya, dan sediakan buku pencatat capaian.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="rencana-head">
+                    <span class="rencana-num">4</span>
+                    <h3>Senam Bersama</h3>
+                    <span class="rencana-tag">Jumat blok B</span>
+                </div>
+                <div class="kg-rows">
+                    <div class="kg-row">
+                        <span class="kg-chip chip-kontribusi"><i class="fas fa-hand-holding-heart"></i> Kontribusi</span>
+                        <p>Meningkatkan kebugaran, kekompakan, dan semangat. Kebugaran penting karena pekerjaan dapur menuntut stamina, berdiri lama, dan daya tahan.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-dimensi"><i class="fas fa-award"></i> Dimensi</span>
+                        <p>Kesehatan dan kolaborasi.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-risiko"><i class="fas fa-triangle-exclamation"></i> Risiko</span>
+                        <p>Ada murid yang sakit atau kelelahan, dan cuaca bisa menghambat kegiatan di luar ruangan.</p>
+                    </div>
+                    <div class="kg-row">
+                        <span class="kg-chip chip-saran"><i class="fas fa-lightbulb"></i> Saran</span>
+                        <p>Siapkan alternatif dalam ruangan dan prosedur khusus bagi murid yang tidak sehat.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up">
+                <div class="rencana-head">
+                    <span class="rencana-num">★</span>
+                    <h3>Analisis Keseluruhan</h3>
+                </div>
+                <div class="rencana-subgroups">
+                    <div class="rencana-subgroup sub-good">
+                        <div class="subgroup-label"><i class="fas fa-thumbs-up"></i> Kekuatan</div>
+                        <p>Kegiatan non-mengajar mencakup hampir semua dimensi profil lulusan: keimanan (duha &amp; literasi Qur'an), kewargaan (upacara, 3S), kesehatan (senam), serta kolaborasi dan komunikasi (semuanya berjamaah/berkelompok). Ritmenya seimbang: mental-spiritual, jasmani, dan sosial.</p>
+                    </div>
+                    <div class="rencana-subgroup sub-warn">
+                        <div class="subgroup-label"><i class="fas fa-thumbs-down"></i> Kelemahan dan Tantangan</div>
+                        <ul class="rencana-sub-simple">
+                            <li><strong>Beban hari Jumat:</strong> duha, literasi Qur'an, senam, dan 3S menumpuk di Jumat pagi — waktu belajar efektif berkurang dan murid bisa lelah.</li>
+                            <li><strong>Belum terhubung dengan pembelajaran:</strong> nilai karakter belum dikaitkan eksplisit dengan modul ajar. Modul Bumbu Dasar menyebut DPL 1 (keimanan) dan DPL 7 (kesehatan), tetapi penguatannya tidak terlihat di langkah pembelajaran.</li>
+                            <li><strong>Belum ada penilaian karakter:</strong> tidak ada instrumen sederhana untuk memantau dampak kegiatan pada murid.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up">
+                <div class="rencana-head">
+                    <span class="rencana-num">✦</span>
+                    <h3>Saran Integrasi</h3>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div>Hubungkan nilai kegiatan dengan topik bumbu dasar, misalnya apersepsi <strong>"kebersihan dan halal-thayyib"</strong> (nilai ibadah + K3 dapur) atau <strong>"stamina dan kesehatan"</strong> (senam + gizi bumbu rempah).</div></li>
+                    <li><span class="pt-dot"></span><div>Buat <strong>lembar pemantauan karakter sederhana</strong> dengan indikator kehadiran, ketepatan waktu, kerapian, dan partisipasi.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Rotasi peran murid</strong> (petugas upacara, pemimpin senam, pembimbing literasi) untuk menumbuhkan kepemimpinan dan kemandirian.</div></li>
+                    <li><span class="pt-dot"></span><div>Bila jadwal Jumat terlalu padat, <strong>diskusikan dengan sekolah</strong> agar durasi tiap kegiatan diseimbangkan.</div></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="rencana-conclusion" data-aos="fade-up">
+            <div class="rencana-conclusion-icon"><i class="fas fa-flag-checkered"></i></div>
+            <div>
+                <h4>Kesimpulan</h4>
+                <p>Kegiatan non-mengajar berperan penting sebagai pembentuk karakter dan budaya sekolah, melengkapi pembelajaran kuliner yang berfokus pada keterampilan. Pembiasaan ini membentuk murid yang <strong>disiplin, religius, sehat, dan sopan</strong> — sikap yang dibutuhkan di dunia kerja. Agar dampaknya kuat, kegiatan perlu dibuat bermakna (bukan sekadar rutinitas), dikaitkan dengan pembelajaran, dan dipantau lewat indikator yang jelas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="refleksi">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-lightbulb"></i></div>
+            <h2 class="section-title">Refleksi</h2>
+            <p class="section-subtitle">Ruang untuk mengevaluasi, mengaitkan pengalaman, serta merumuskan langkah perbaikan ke depan.</p>
+        </div>
+
+        <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-stat ms-navy"><span class="ms-num">4</span><span class="ms-label">Bagian Refleksi</span></div>
+            <div class="mini-stat ms-amber"><span class="ms-num">7</span><span class="ms-label">Perlu Ditingkatkan</span></div>
+            <div class="mini-stat ms-purple"><span class="ms-num">6</span><span class="ms-label">Tindak Lanjut</span></div>
+        </div>
+
+        <div class="rencana-list">
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="rencana-head">
+                    <span class="rencana-num">✓</span>
+                    <h3>Yang Sudah Baik</h3>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Kontekstual sesuai SMK kuliner:</strong> modul memadukan diskusi, praktik langsung, dan refleksi.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Asesmen lengkap:</strong> asesmen diagnostik, LKPD, dan rubrik penilaian telah tersedia.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Materi runtut:</strong> dari pengertian, fungsi, jenis, turunan, sampai penyimpanan bumbu.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Apersepsi kontekstual:</strong> dimulai dari pengalaman murid memasak di rumah, sehingga materi terasa dekat dengan kehidupan mereka.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="rencana-head">
+                    <span class="rencana-num">!</span>
+                    <h3>Yang Perlu Ditingkatkan</h3>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Alokasi waktu tidak konsisten:</strong> informasi umum menyebut 10 × 45 menit (450 menit), tetapi langkah pembelajaran hanya terisi sekitar 90 menit dan waktu praktik terlalu sempit.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>TP belum terukur sepenuhnya:</strong> TP 5 menuntut membuat bumbu dasar dan turunannya, padahal kegiatan hanya membuat satu bumbu dasar.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Belum ada model dengan sintaks jelas:</strong> perencanaan baru berupa daftar metode.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Hasil diagnostik belum dimanfaatkan:</strong> belum ada perlakuan berbeda (diferensiasi) untuk murid dengan pemahaman beragam.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Langkah praktik belum lengkap:</strong> belum memuat K3, sanitasi, dan persiapan bahan.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Kedalaman materi masih dangkal:</strong> penyimpanan, takaran, dan teknik pengolahan belum dibahas, dan belum ada soal yang melatih penalaran kritis.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Penilaian belum berlevel:</strong> rubrik tanpa level kinerja; penilaian individual, kisi-kisi, serta cakupan tes turunan dan penyimpanan belum ada.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="rencana-head">
+                    <span class="rencana-num">★</span>
+                    <h3>Yang Saya Pelajari</h3>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div>Pentingnya <strong>menyelaraskan alokasi waktu</strong> dengan langkah pembelajaran agar rencana benar-benar terlaksana.</div></li>
+                    <li><span class="pt-dot"></span><div>Tujuan pembelajaran harus <strong>terukur dan selaras</strong> dengan kegiatan yang dirancang.</div></li>
+                    <li><span class="pt-dot"></span><div>Model pembelajaran dengan <strong>sintaks yang jelas</strong> lebih efektif daripada sekadar daftar metode.</div></li>
+                    <li><span class="pt-dot"></span><div>Asesmen diagnostik baru bermakna bila <strong>diikuti tindak lanjut</strong>, misalnya diferensiasi.</div></li>
+                    <li><span class="pt-dot"></span><div>Praktik dapur perlu mengutamakan <strong>K3, sanitasi, dan persiapan bahan</strong>.</div></li>
+                    <li><span class="pt-dot"></span><div>Materi perlu pembahasan lebih dalam dan <strong>soal bernalar</strong> agar melatih penalaran kritis, bukan sekadar hafalan.</div></li>
+                </ul>
+            </article>
+
+            <article class="rencana-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="rencana-head">
+                    <span class="rencana-num">→</span>
+                    <h3>Rencana Tindak Lanjut</h3>
+                </div>
+                <ul class="rencana-points">
+                    <li><span class="pt-dot"></span><div><strong>Menyelaraskan waktu:</strong> membagi pembelajaran ke beberapa sesi.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Merevisi TP</strong> agar terukur dan sesuai dengan kegiatan yang dirancang.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Menetapkan model pembelajaran</strong> yang jelas.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Memakai hasil diagnostik</strong> untuk diferensiasi murid.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Melengkapi instrumen penilaian:</strong> rubrik berlevel, penilaian individual, kisi-kisi, dan cakupan tes turunan &amp; penyimpanan.</div></li>
+                    <li><span class="pt-dot"></span><div><strong>Menambahkan konteks bumbu lokal</strong> agar pembelajaran lebih bermakna.</div></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="refleksi-card" data-aos="fade-up" data-aos-delay="300" style="border-left-color: var(--accent);">
+            <h3><i class="fas fa-person-digging"></i> Pengalaman Menantang Selama PPL</h3>
+            <p>Setelah melaksanakan PPL 1, saya memperoleh banyak pengalaman yang berharga sekaligus menantang. Salah satu tantangan yang saya hadapi adalah bagaimana menangani murid yang sulit diatur dan menciptakan suasana kelas yang nyaman agar mereka mau berpartisipasi aktif dalam pembelajaran. Selain itu, guru pamong juga mengajarkan cara mengelola alat dan bahan praktik dengan baik agar kegiatan pembelajaran praktik dapat berjalan lancar. Dari berbagai pengalaman tersebut, tantangan yang paling besar bagi saya adalah mengelola kelas yang terdiri dari murid dengan karakter yang beragam, sehingga semua murid dapat belajar dengan tenang, fokus, dan mengikuti pembelajaran dengan baik.</p>
+        </div>
+
+        <div class="refleksi-card" data-aos="fade-up" data-aos-delay="400" style="border-left-color: var(--secondary);">
+            <h3><i class="fas fa-comment-dots"></i> Umpan Balik dari Guru Pamong dan DPL</h3>
+            <div class="feedback-grid">
+                <div class="feedback-item">
+                    <h4><i class="fas fa-chalkboard-user"></i> Guru Pamong</h4>
+                    <ul>
+                        <li>Modul ajar yang disusun sudah baik, perlu ditambahkan materi dan model pembelajaran berdiferensiasi</li>
+                        <li>Perlu diterapkan pemberian ice breaking di dalam kelas agar murid tidak bosan</li>
+                        <li>Pada pembelajaran teori dengan durasi panjang, guru harus kreatif dan membawa murid mengobservasi dapur</li>
+                    </ul>
+                </div>
+                <div class="feedback-item">
+                    <h4><i class="fas fa-user-graduate"></i> DPL</h4>
+                    <ul>
+                        <li>Memperbaiki susunan modul ajar agar lebih menarik</li>
+                        <li>Lebih banyak memperkenalkan murid dengan dunia industri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-tagline">"Bersama Pendidikan, Menuju Masa Depan yang Lebih Baik."</p>
+            <p class="footer-meta">E-Portofolio | Nasriani, S.Pd. | PPG Calon Guru Gelombang 1 Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio - Nasriani, S.Pd. | Artefak &amp; Galeri</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="beranda.html#beranda" class="nav-brand">
+            <span class="nav-logo-badge"><i class="fas fa-graduation-cap"></i></span>
+            <span class="nav-brand-text">
+                <span class="nav-platform">PPL / PPG</span>
+                <span class="nav-tagline">Berkarya • Berdampak</span>
+            </span>
+        </a>
+        <ul class="nav-links">
+            <li class="menu-pg1"><a href="beranda.html#beranda"><i class="fas fa-home"></i>Beranda</a></li>
+            <li class="menu-pg1"><a href="profil.html"><i class="fas fa-user"></i>Profil</a></li>
+            <li class="nav-dropdown menu-pg1">
+                <a href="analisis.html" class="dropdown-toggle"><i class="fas fa-list"></i>Analisis<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="analisis.html#analisis-rencana"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Rencana Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-materi"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Materi Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-media"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Media Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-video"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Video Pembelajaran<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#analisis-non-mengajar"><span class="sub-ico"><i class="fas fa-file-lines"></i></span>Analisis Kegiatan Non-Mengajar<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="analisis.html#refleksi"><span class="sub-ico"><i class="fas fa-lightbulb"></i></span>Refleksi<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uts.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UTS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uts.html#uts-rpm1"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uts.html#uts-video1"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus I<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown menu-pg2">
+                <a href="uas.html" class="dropdown-toggle"><i class="fas fa-file-signature"></i>UAS<i class="fas fa-chevron-down nav-caret"></i></a>
+                <ul class="nav-submenu">
+                    <li><a href="uas.html#uas-rpm"><span class="sub-ico"><i class="fas fa-file-circle-check"></i></span>RPM Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                    <li><a href="uas.html#uas-video"><span class="sub-ico"><i class="fas fa-video"></i></span>Video Pembelajaran Terbaik Siklus 2-4<i class="fas fa-chevron-right sub-arrow"></i></a></li>
+                </ul>
+            </li>
+            <li class="menu-pg2"><a href="artefak.html"><i class="fas fa-folder-open"></i>Artefak &amp; Galeri</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="nav-pager" id="navPager" onclick="toggleNavPage()"><i class="fas fa-chevron-right"></i></button>
+            <div class="nav-profile" title="Profil Pengguna"><i class="fas fa-user-circle"></i></div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="artefak">
+        <div class="section-head" data-aos="fade-up">
+            <div class="section-head-icon"><i class="fas fa-folder-open"></i></div>
+            <h2 class="section-title">Artefak &amp; Galeri</h2>
+            <p class="section-subtitle">Modul ajar dan dokumentasi praktik mengajar di SMKN 6 Makassar</p>
+        </div>
+
+        <div class="artefak-tabs" data-aos="fade-up" data-aos-delay="80">
+            <a href="#modul-ajar" class="artefak-tab"><i class="fas fa-book-open"></i> Modul Ajar</a>
+            <a href="#penilaian-gp" class="artefak-tab"><i class="fas fa-clipboard-check"></i> Lembar Penilaian GP</a>
+            <a href="#galeri" class="artefak-tab"><i class="fas fa-images"></i> Galeri Dokumentasi</a>
+            <a href="#video-pembelajaran" class="artefak-tab"><i class="fas fa-video"></i> Video Pembelajaran</a>
+        </div>
+
+        <div id="modul-ajar" class="artefak-block">
+            <div class="artefak-block-head" data-aos="fade-up">
+                <h3 class="sub-section-title"><i class="fas fa-book-open"></i> Modul Ajar</h3>
+                <p class="sub-section-subtitle">Kumpulan modul ajar praktik mengajar, Fase F Konsentrasi Kuliner</p>
+            </div>
+            <div class="mini-stats" data-aos="fade-up" data-aos-delay="100">
+                <div class="mini-stat ms-navy"><span class="ms-num">9</span><span class="ms-label">Modul</span></div>
+                <div class="mini-stat ms-green"><span class="ms-num">6</span><span class="ms-label">Word</span></div>
+                <div class="mini-stat ms-red"><span class="ms-num">3</span><span class="ms-label">PDF</span></div>
+            </div>
+            <p class="modul-hint" data-aos="fade-up" data-aos-delay="150">Klik salah satu modul untuk membaca langsung di halaman ini, atau gunakan tombol <strong>Buka</strong> dan <strong>Unduh</strong>.</p>
+            <div class="modul-list">
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Bumbu Dasar</h4>
+                        <p>Word (.docx) • Kelas X-1</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1gBKm33bU6muuSWbOAzEpnhdBHOGsV6VS/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1gBKm33bU6muuSWbOAzEpnhdBHOGsV6VS" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1gBKm33bU6muuSWbOAzEpnhdBHOGsV6VS/preview" title="Modul Ajar — Bumbu Dasar" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Kue Adonan Beragi</h4>
+                        <p>Word (.docx) • Kelas XI</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1ax1FrW8XWuYfJd_k9NwE6eP4pB4aCbEy/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1ax1FrW8XWuYfJd_k9NwE6eP4pB4aCbEy" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1ax1FrW8XWuYfJd_k9NwE6eP4pB4aCbEy/preview" title="Modul Ajar — Kue Adonan Beragi" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Kue Tradisional Beras</h4>
+                        <p>Word (.docx)</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1HxiS9Lq2qEzJbjC0dRbotsq-A_z5rJrM/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1HxiS9Lq2qEzJbjC0dRbotsq-A_z5rJrM" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1HxiS9Lq2qEzJbjC0dRbotsq-A_z5rJrM/preview" title="Modul Ajar — Kue Tradisional Beras" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Perkembangan Kuliner &amp; Teknologi</h4>
+                        <p>Word (.docx)</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1k9ew-99pFjUJ5lgT4CGXpkhxJhRQjAZF/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1k9ew-99pFjUJ5lgT4CGXpkhxJhRQjAZF" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1k9ew-99pFjUJ5lgT4CGXpkhxJhRQjAZF/preview" title="Modul Ajar — Perkembangan Kuliner &amp; Teknologi" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Sejarah &amp; Hierarki Dapur</h4>
+                        <p>Word (.docx) • Kelas X</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1i4g1L6xIoiq-MKqSbZPOkvmzqxs-goA0/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1i4g1L6xIoiq-MKqSbZPOkvmzqxs-goA0" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1i4g1L6xIoiq-MKqSbZPOkvmzqxs-goA0/preview" title="Modul Ajar — Sejarah &amp; Hierarki Dapur" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-word"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Soft Roll &amp; Hard Roll</h4>
+                        <p>Word (.docx) • Kelas XI</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1greW1oxdVAJ5IgxCZ7LBkwzjkVC5FIDU/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1greW1oxdVAJ5IgxCZ7LBkwzjkVC5FIDU" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1greW1oxdVAJ5IgxCZ7LBkwzjkVC5FIDU/preview" title="Modul Ajar — Soft Roll &amp; Hard Roll" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card is-pdf" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                    <div class="file-doc-info">
+                        <h4>Modul Ajar — Tata Hidang</h4>
+                        <p>PDF • Kelas XI</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1HVnnzFhoT33KxR-TlmlEo9ruD2mAiN80/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1HVnnzFhoT33KxR-TlmlEo9ruD2mAiN80" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1HVnnzFhoT33KxR-TlmlEo9ruD2mAiN80/preview" title="Modul Ajar — Tata Hidang" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card is-pdf" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                    <div class="file-doc-info">
+                        <h4>RPM — Roti Manis</h4>
+                        <p>PDF</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1rNhNsiHDDo6iNzbK8rwfO1nI6L5evObj/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1rNhNsiHDDo6iNzbK8rwfO1nI6L5evObj" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/1rNhNsiHDDo6iNzbK8rwfO1nI6L5evObj/preview" title="RPM — Roti Manis" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+
+            <details class="file-doc modul-card is-pdf" data-aos="fade-up">
+                <summary class="file-doc-head">
+                    <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                    <div class="file-doc-info">
+                        <h4>RPM — Roti Tawar</h4>
+                        <p>PDF</p>
+                    </div>
+                    <div class="file-doc-actions" onclick="event.stopPropagation()">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                    <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                </summary>
+                <div class="file-doc-preview">
+                    <iframe src="https://drive.google.com/file/d/11oEqxLw3SaTkiwHapM_EukCWL7wlNDKk/preview" title="RPM — Roti Tawar" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </details>
+            </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div id="penilaian-gp" class="artefak-block">
+            <div class="artefak-block-head" data-aos="fade-up">
+                <h3 class="sub-section-title"><i class="fas fa-clipboard-check"></i> Lembar Penilaian GP</h3>
+                <p class="sub-section-subtitle">Penilaian praktik mengajar dari Guru Pamong. Klik salah satu untuk membaca langsung di halaman.</p>
+            </div>
+            <div class="modul-list">
+                <details class="file-doc modul-card is-pdf" data-aos="fade-up" data-aos-delay="0">
+                    <summary class="file-doc-head">
+                        <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                        <div class="file-doc-info">
+                            <h4>Lembar Penilaian GP: DDK</h4>
+                            <p>PDF • Instrumen Penilaian Praktik Mengajar</p>
+                        </div>
+                        <div class="file-doc-actions" onclick="event.stopPropagation()">
+                            <a class="file-btn file-btn--open" href="gp/lp-ddk.pdf" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                            <a class="file-btn file-btn--dl" href="gp/lp-ddk.pdf" download><i class="fas fa-download"></i> Unduh</a>
+                        </div>
+                        <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="file-doc-preview">
+                        <iframe src="gp/lp-ddk.pdf" title="Lembar Penilaian GP: DDK" loading="lazy"></iframe>
+                    </div>
+                </details>
+                <details class="file-doc modul-card is-pdf" data-aos="fade-up" data-aos-delay="80">
+                    <summary class="file-doc-head">
+                        <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                        <div class="file-doc-info">
+                            <h4>Lembar Penilaian GP: Pastry</h4>
+                            <p>PDF • Instrumen Penilaian Praktik Mengajar</p>
+                        </div>
+                        <div class="file-doc-actions" onclick="event.stopPropagation()">
+                            <a class="file-btn file-btn--open" href="gp/lp-pastry.pdf" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                            <a class="file-btn file-btn--dl" href="gp/lp-pastry.pdf" download><i class="fas fa-download"></i> Unduh</a>
+                        </div>
+                        <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="file-doc-preview">
+                        <iframe src="gp/lp-pastry.pdf" title="Lembar Penilaian GP: Pastry" loading="lazy"></iframe>
+                    </div>
+                </details>
+                <details class="file-doc modul-card is-pdf" data-aos="fade-up" data-aos-delay="160">
+                    <summary class="file-doc-head">
+                        <div class="file-doc-icon small"><i class="fas fa-file-pdf"></i></div>
+                        <div class="file-doc-info">
+                            <h4>Lembar Penilaian GP: Tata Hidang</h4>
+                            <p>PDF • Instrumen Penilaian Praktik Mengajar</p>
+                        </div>
+                        <div class="file-doc-actions" onclick="event.stopPropagation()">
+                            <a class="file-btn file-btn--open" href="gp/lp-tata-hidang.pdf" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Buka</a>
+                            <a class="file-btn file-btn--dl" href="gp/lp-tata-hidang.pdf" download><i class="fas fa-download"></i> Unduh</a>
+                        </div>
+                        <span class="modul-caret"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="file-doc-preview">
+                        <iframe src="gp/lp-tata-hidang.pdf" title="Lembar Penilaian GP: Tata Hidang" loading="lazy"></iframe>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div id="galeri" class="artefak-block">
+            <div class="artefak-block-head" data-aos="fade-up">
+                <h3 class="sub-section-title"><i class="fas fa-images"></i> Galeri Dokumentasi</h3>
+                <p class="sub-section-subtitle">18 foto dokumentasi selama PPL di SMKN 6 Makassar. Klik foto untuk memperbesar.</p>
+            </div>
+            <div class="galeri-masonry">
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 1">
+                    <img src="img/galeri/galeri%20%281%29.jpeg" alt="Dokumentasi PPL 1" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 2">
+                    <img src="img/galeri/galeri%20%282%29.jpeg" alt="Dokumentasi PPL 2" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 3">
+                    <img src="img/galeri/galeri%20%283%29.jpeg" alt="Dokumentasi PPL 3" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 4">
+                    <img src="img/galeri/galeri%20%284%29.jpeg" alt="Dokumentasi PPL 4" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 5">
+                    <img src="img/galeri/galeri%20%286%29.jpeg" alt="Dokumentasi PPL 5" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 6">
+                    <img src="img/galeri/galeri%20%287%29.jpeg" alt="Dokumentasi PPL 6" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 7">
+                    <img src="img/galeri/galeri%20%288%29.jpeg" alt="Dokumentasi PPL 7" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 8">
+                    <img src="img/galeri/galeri%20%2810%29.jpeg" alt="Dokumentasi PPL 8" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 9">
+                    <img src="img/galeri/galeri%20%2811%29.jpeg" alt="Dokumentasi PPL 9" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 10">
+                    <img src="img/galeri/galeri%20%2812%29.jpeg" alt="Dokumentasi PPL 10" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 11">
+                    <img src="img/galeri/galeri%20%2813%29.jpeg" alt="Dokumentasi PPL 11" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 12">
+                    <img src="img/galeri/galeri%20%2814%29.jpeg" alt="Dokumentasi PPL 12" loading="lazy">
+                </figure>
+                <figure class="galeri-item galeri-strip" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 13">
+                    <img src="img/galeri/galeri%20%2815%29.jpeg" alt="Dokumentasi PPL 13" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 14">
+                    <img src="img/galeri/galeri%20%2816%29.jpeg" alt="Dokumentasi PPL 14" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 15">
+                    <img src="img/galeri/galeri%20%2817%29.jpeg" alt="Dokumentasi PPL 15" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="0" tabindex="0" role="button" aria-label="Perbesar foto 16">
+                    <img src="img/galeri/galeri%20%2818%29.jpeg" alt="Dokumentasi PPL 16" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="80" tabindex="0" role="button" aria-label="Perbesar foto 17">
+                    <img src="img/galeri/galeri%20%2819%29.jpeg" alt="Dokumentasi PPL 17" loading="lazy">
+                </figure>
+                <figure class="galeri-item" data-aos="fade-up" data-aos-delay="160" tabindex="0" role="button" aria-label="Perbesar foto 18">
+                    <img src="img/galeri/galeri%20%2820%29.jpeg" alt="Dokumentasi PPL 18" loading="lazy">
+                </figure>
+            </div>
+        </div>
+
+        <div class="section-spacer"></div>
+
+        <div id="video-pembelajaran" class="artefak-block">
+            <div class="artefak-block-head" data-aos="fade-up">
+                <h3 class="sub-section-title"><i class="fas fa-video"></i> Video Pembelajaran</h3>
+                <p class="sub-section-subtitle">Rekaman praktik mengajar pada Siklus 1, 2, dan 3</p>
+            </div>
+            <div class="video-stack">
+                <article class="video-card" data-aos="fade-up">
+                    <div class="video-card-head">
+                        <span class="video-card-badge">Siklus 1</span>
+                        <h4>Video Pembelajaran Siklus 1</h4>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://drive.google.com/file/d/1DhvI0v_1LwAOHln9nuTNl46-AkMtZ0FL/preview" title="Video Pembelajaran Siklus 1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-actions">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1DhvI0v_1LwAOHln9nuTNl46-AkMtZ0FL/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-play"></i> Putar</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1DhvI0v_1LwAOHln9nuTNl46-AkMtZ0FL" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                </article>
+                <article class="video-card" data-aos="fade-up">
+                    <div class="video-card-head">
+                        <span class="video-card-badge">Siklus 2</span>
+                        <h4>Video Pembelajaran Siklus 2</h4>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://drive.google.com/file/d/1s0AeiTUqSRAmcKSlG16rgSJ0vMfinwsc/preview" title="Video Pembelajaran Siklus 2" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-actions">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1s0AeiTUqSRAmcKSlG16rgSJ0vMfinwsc/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-play"></i> Putar</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1s0AeiTUqSRAmcKSlG16rgSJ0vMfinwsc" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                </article>
+                <article class="video-card" data-aos="fade-up">
+                    <div class="video-card-head">
+                        <span class="video-card-badge">Siklus 3</span>
+                        <h4>Video Pembelajaran Siklus 3</h4>
+                    </div>
+                    <div class="video-frame">
+                        <iframe src="https://drive.google.com/file/d/1FfSaZxTAY5Y8jexXWLPxPJs6Z1mMyb5l/preview" title="Video Pembelajaran Siklus 3" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <div class="video-actions">
+                        <a class="file-btn file-btn--open" href="https://drive.google.com/file/d/1FfSaZxTAY5Y8jexXWLPxPJs6Z1mMyb5l/view?usp=drivesdk" target="_blank" rel="noopener"><i class="fas fa-play"></i> Putar</a>
+                        <a class="file-btn file-btn--dl" href="https://drive.google.com/uc?export=download&amp;id=1FfSaZxTAY5Y8jexXWLPxPJs6Z1mMyb5l" target="_blank" rel="noopener"><i class="fas fa-download"></i> Unduh</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Tutup"><i class="fas fa-xmark"></i></button>
+        <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Foto sebelumnya"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Foto berikutnya"><i class="fas fa-chevron-right"></i></button>
+        <figure class="lb-fig">
+            <img id="lbImg" src="" alt="">
+            <span class="lb-count" id="lbCount"></span>
+        </figure>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-tagline">"Bersama Pendidikan, Menuju Masa Depan yang Lebih Baik."</p>
+            <p class="footer-meta">E-Portofolio | Nasriani, S.Pd. | PPG Calon Guru Gelombang 1 Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/galeri.js"></script>
+</body>
+</html>
